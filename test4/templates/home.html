@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Covage_MingmingQIU</title>
+</head>
+<body>
+
+ <div style="width:80% " align="middle">
+    <table style="width:80%" border="10">
+
+        <tr>
+            <th colspan="3"><h1 align="middle">Exercice de COVAGE</h1>
+            <h4>par: Mingming QIU</h4></th>
+        </tr>
+    </table>
+
+    <table style="width:80%" border="10">
+
+        <tr>
+
+            <th colspan="3">{{ key0 }}</th>
+
+        </tr>
+
+        <tr>
+            <td colspan="3" style="text-align:center;white-space:nowrap">{{ values0 }}</td>
+        </tr>
+    </table>
+
+    <table style="width:80%" border="10">
+
+        <tr>
+            <th colspan="3">{{ key1 }}</th>
+        </tr>
+
+        <tr>
+            <td colspan="3" style="text-align:center;white-space:nowrap">{{ values1 }}</td>
+        </tr>
+
+    </table>
+
+    <table width="80%" border="10">
+
+         <tr>
+            <th colspan="3">{{ key2 }}</th>
+        </tr>
+
+
+        <tr>
+            <th colspan="2">{{ snmp_keys_0 }}</th>
+            <td style="text-align:center;white-space:nowrap"> {{ snmp_values_0 }} </td>
+        </tr>
+
+        <tr>
+            <th colspan="2">{{ snmp_keys_1 }}</th>
+            <td style="text-align:center;white-space:nowrap"> {{ snmp_values_1 }} </td>
+        </tr>
+
+        <tr>
+            <th colspan="2">{{ snmp_keys_2 }}</th>
+            <td style="text-align:center;white-space:nowrap"> {{ snmp_values_2 }} </td>
+        </tr>
+
+        <tr>
+            <th colspan="2">{{ snmp_keys_3 }}</th>
+            <td style="text-align:center;white-space:nowrap"> {{ snmp_values_3 }} </td>
+        </tr>
+
+        <tr>
+            <th rowspan="3">{{ snmp_keys_4 }}</th>
+            <th rowspan="3">{{ snmp_4_key }}</th>
+            <td style="text-align:center;white-space:nowrap">{{ snmp_4_value0 }}</td>
+        </tr>
+
+        <tr>
+            <td style="text-align:center;white-space:nowrap">{{ snmp_4_value1 }}</td>
+        </tr>
+
+        <tr>
+            <td style="text-align:center;white-space:nowrap">{{ snmp_4_value2 }}</td>
+        </tr>
+
+    </table>
+
+    <table width="80%" border="10">
+        <tr>
+            <th colspan="3">{{ key3 }}</th>
+        </tr>
+
+
+        <tr>
+            {% for values in doc_vlan_keys %}
+             <th>{{ values }}</th>
+            {% endfor %}
+        </tr>
+
+        <tr>
+            {% for values in vlan_values0 %}
+            <td style="text-align:center;white-space:nowrap">{{ values }}</td>
+            {% endfor %}
+        </tr>
+
+        <tr>
+            {% for values in vlan_values1 %}
+            <td style="text-align:center;white-space:nowrap">{{ values }}</td>
+           {% endfor %}
+        </tr>
+
+        <tr>
+            {% for values in vlan_values2 %}
+            <td style="text-align:center;white-space:nowrap">{{ values }}</td>
+            {% endfor %}
+        </tr>
+
+        <tr>
+            {% for values in vlan_values3 %}
+            <td style="text-align:center;white-space:nowrap">{{ values }}</td>
+            {% endfor %}
+        </tr>
+</table>
+
+</div>
+</body>
+</html>
